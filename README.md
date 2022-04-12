@@ -1,6 +1,6 @@
 # Course Notes - [Learn Java by Codecademy](https://www.codecademy.com/courses/learn-java/)
 
-Section 1 - Hello World
+[Section 1 - Hello World](https://github.com/mrjohnming/codecademy_learn-java/blob/main/01_hello-world.md)
 
 Section 2 - Variables
 
