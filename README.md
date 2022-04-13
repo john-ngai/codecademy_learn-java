@@ -2,7 +2,7 @@
 
 [Section 1 - Hello World](https://github.com/mrjohnming/codecademy_learn-java/blob/main/01_hello-world.md)
 
-Section 2 - Variables
+[Section 2 - Variables](https://github.com/mrjohnming/codecademy_learn-java/blob/main/02_variables.md)
 
 Section 3 - Object-Oriented Java
 
