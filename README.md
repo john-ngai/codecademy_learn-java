@@ -18,8 +18,7 @@ Section 3 - Object-Oriented Java
 <br> &ensp; [3.1 - Classes & Objects](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03.1_classes.md)
 <br> &ensp; [3.2 - Methods](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03.2_methods.md)
 
-
-[Section 4 - Conditionals & Control Flow](https://github.com/mrjohnming/codecademy_learn-java/blob/main/04_methods.md)
+Section 4 - Conditionals & Control Flow
 
 Section 5 - Arrays & ArrayLists
 
