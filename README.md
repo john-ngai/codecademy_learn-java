@@ -4,7 +4,7 @@
 
 [Section 2 - Variables](https://github.com/mrjohnming/codecademy_learn-java/blob/main/02_variables.md)
 
-Section 3 - Object-Oriented Java
+[Section 3 - Object-Oriented Java (Classes)](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03_classes.md)
 
 Section 4 - Conditionals & Control Flow
 
