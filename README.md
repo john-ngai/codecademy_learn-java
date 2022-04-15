@@ -14,7 +14,10 @@ These notes were written assuming you have some basic understanding of programmi
 
 [Section 2 - Variables](https://github.com/mrjohnming/codecademy_learn-java/blob/main/02_variables.md)
 
-[Section 3 - Object-Oriented Java (Classes)](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03_classes.md)
+Section 3 - Object-Oriented Java
+<br> &ensp; [3.1 - Classes & Objects](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03.1_classes.md)
+<br> &ensp; [3.2 - Methods](https://github.com/mrjohnming/codecademy_learn-java/blob/main/03.2_methods.md)
+
 
 [Section 4 - Conditionals & Control Flow](https://github.com/mrjohnming/codecademy_learn-java/blob/main/04_methods.md)
 
