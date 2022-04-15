@@ -1,0 +1,250 @@
+# Section 4 - Methods
+
+Learn Java by Codecademy
+
+**Reference:** https://www.codecademy.com/courses/learn-java/lessons/learn-java-methods/
+
+# Introduction to Methods
+
+Methods are repeatable, modular blocks of code used to accomplish specific tasks. Through *method decomposition*, we can use methods to break down a large problem into smaller, more manageable problems.
+
+*Procedural abstraction* is the concept of knowing what a method does, but not how it accomplishes it. The ability to use procedural abstraction in programming is fundamental to designing clean, readable, and maintable code.
+
+<br>
+
+# Defining Methods
+
+**Example** - Defining a `checkBalance()` method:
+
+```java
+public class savingsAccount {
+  int balance;
+  
+  ...
+
+  public void checkBalance(){
+    System.out.println("Hello!");
+    System.out.println("Your balance is " + balance);
+  }
+}
+```
+
+The first line, `public void checkBalance()`, is the method declaration:
+
+* `public` means that other classes can access this method.
+* The `void` keyword means that there is no specific output (return) from the method.
+* `checkBalance()` is the name of the method.
+
+**Reminder:** Every method has its own unique *method signature* which is comprised of the method’s name and its parameter type. In the above example, the method signature is `checkBalance()`.
+
+**Note:** `checkBalance()` is considered a *non-static method* because it's signature does not include the keyword `static` like the `main()` method does.
+
+<br>
+
+# Calling Methods
+
+When we add a **non-static method** to a class, it becomes available to use on an object of that class. 
+
+**Example** - Calling the `startEngine()` method on a `MyFastCar` object:
+
+```java
+class Car {
+  String color;
+ 
+  public Car(String carColor) {
+    color = carColor;
+  }
+ 
+  public void startEngine() {
+    System.out.println("Starting the car!");
+    System.out.println("Vroom!");
+  }
+ 
+  public static void main(String[] args){
+    Car myFastCar = new Car("red");
+
+    // Call a method on an object
+    myFastCar.startEngine();
+    System.out.println("That was one fast car!");
+  }
+}
+```
+
+If we run the above program, we will get the following output:
+
+```
+Starting the car!
+Vroom!
+That was one fast car!
+```
+
+<br>
+
+# Scope
+
+A method is a task that an object of a class performs.
+
+We mark the domain of a task using curly braces:  `{` , and  `}` . This domain is called the *scope of a method*.
+
+We **can’t access** variables that are declared **inside** a method that is **outside** the scope of that method.
+
+For example, given a `Car` class:
+
+```java
+class Car {
+  String color;
+  int milesDriven;
+ 
+  public Car(String carColor) {
+    color = carColor;
+    milesDriven = 0;         
+  }
+ 
+  public void drive() {
+     String message = "Miles driven: " + milesDriven;
+     System.out.println(message);
+  }
+ 
+  public static void main(String[] args){
+     Car myFastCar = new Car("red");
+     myFastCar.drive();
+  }
+}
+```
+
+The variable `message`, which is declared and initialized inside of `drive()`, cannot be used inside of `main()`.
+
+However, `milesDriven`, which is declared at the top of the class, can be used inside all methods within the class.
+
+<br>
+
+# Adding Parameters
+
+Similar to how we added parameters to *constructors*, we can customize all other methods to accept parameters.
+
+**Example** - Adding two parameters to a `startRadio()` method:
+
+```java
+public void startRadio(double stationNum, String stationName) {
+  System.out.println("Turning on the radio to " + stationNum + ", " + stationName + "!");
+  System.out.println("Enjoy!");
+}
+```
+
+**Note:** Adding parameter values will impact the method’s signature (i.e., `startRadio(double, String)`).
+
+<br>
+
+# Reassigning Instance Fields
+
+We can reassign the value of instance fields using methods:
+
+```java
+public class savingsAccount {
+  int balance;
+
+  ...
+
+  // Now, when we call deposit(), it should change the value of the balance instance field:
+  public void deposit(double amountToDeposit){
+    double updatedBalance = balance + amountToDeposit;
+    balance = updatedBalance;
+  }
+}
+```
+
+Changing instance fields is how we change the state of an object and make our objects more flexible and realistic.
+
+<br>
+
+# Returns
+
+## Returning Primitive Values
+
+We return a value by using the keyword `return`:
+
+```java
+public int numberOfTires() {
+   int tires = 4;
+
+   // return statement
+   return tires;
+}
+```
+
+In previous examples, new methods were created using the keyword `void`. Here, we are replacing `void` with `int`, to signify that the *return type* is an `int`.
+
+We can use datatype keywords (such as `int`, `char`, etc.) to specify the type of value the method should return. The return value’s type **must** match the return type of the method. 
+
+Unlike void methods, non-void methods can be used as either **1)** a variable value, or **2)** as part of an expression:
+
+```java
+public static void main(String[] args){
+  Car myCar = new Car("red");
+  int numTires = myCar.numberOfTires();
+}
+```
+
+## Returning an Object
+
+When we return a primitive value, a copy of the value is returned. However, when we return an object, we return a **reference to the object** instead of a copy of it.
+
+For example, given the following `CarLot` class:
+
+```java
+class CarLot {
+  Car carInLot;
+  public CarLot(Car givenCar) {
+    carInLot = givenCar;
+  }
+ 
+  public Car returnACar() {
+    // return Car object
+    return carInLot;
+  }
+ 
+  public static void main(String[] args) {
+    Car myCar = new Car("red", 70);
+    System.out.println(myCar);
+
+    CarLot myCarLot = new CarLot(myCar);
+    System.out.println(myCarLot.returnACar());
+  }
+}
+```
+
+This code outputs the same memory address because `myCar` and `carInLot` have the same reference value:
+
+```
+Car@2f333739
+Car@2f333739
+```
+
+<br>
+
+# The toString() Method
+
+When we print out objects, we often see a String that is not very helpful in determining what the object represents (e.g. `Store@6bc7c054`). This doesn't tell us anything about the instance fields defined within the object.
+
+When we define a `toString()` method for a class, we can return a `String` that will print when we print the object:
+
+```java
+class Car {
+  String color;
+ 
+  public Car(String carColor) {
+    color = carColor;
+  }
+ 
+  public static void main(String[] args){
+    Car myCar = new Car("red");
+    System.out.println(myCar);
+  }
+ 
+  public String toString(){
+    return "This is a " + color + " car!";
+  }
+}
+```
+
+When this runs, the command `System.out.println(myCar)` will print `This is a red car!`, which tells us more useful information about the `myCar` object.
