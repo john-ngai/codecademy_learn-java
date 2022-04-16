@@ -4,7 +4,7 @@ Learn Java by Codecademy
 
 **Reference:** https://www.codecademy.com/courses/learn-java/lessons/learn-java-variables/
 
-# Introduction
+# Introduction to Variables
 
 In Java, we specify the type of information we’re storing.
 
