@@ -22,9 +22,9 @@ Section 4 - Conditionals & Control Flow
 
 Section 5 - Arrays & ArrayLists
 <br> &ensp; [5.1 - Arrays](https://github.com/mrjohnming/codecademy_learn-java/blob/main/05.1_arrays.md)
-<br> &ensp; [5.2 ArrayLists](https://github.com/mrjohnming/codecademy_learn-java/blob/main/05.2_arrayLists.md)
+<br> &ensp; [5.2 - ArrayLists](https://github.com/mrjohnming/codecademy_learn-java/blob/main/05.2_arrayLists.md)
 
-Section 6 - Loops
+[Section 6 - Loops](https://github.com/mrjohnming/codecademy_learn-java/blob/main/06_loops.md)
 
 Section 7 - String Methods
 
