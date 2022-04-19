@@ -26,7 +26,7 @@ Section 5 - Arrays & ArrayLists
 
 [Section 6 - Loops](https://github.com/mrjohnming/codecademy_learn-java/blob/main/06_loops.md)
 
-Section 7 - String Methods
+[Section 7 - String Methods](https://github.com/mrjohnming/codecademy_learn-java/blob/main/07_string-methods.md)
 
 Section 8 - Access, Encapsulation, & Static Methods
 
