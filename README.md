@@ -29,6 +29,8 @@ Section 5 - Arrays & ArrayLists
 [Section 7 - String Methods](https://github.com/mrjohnming/codecademy_learn-java/blob/main/07_string-methods.md)
 
 Section 8 - Access, Encapsulation, & Static Methods
+<br> &ensp; [8.1 - Access, Encapsulation, & Scope](https://github.com/mrjohnming/codecademy_learn-java/blob/main/08.1_access.md)
+<br> &ensp; 8.2 - Static Variables & Methods
 
 Section 9 - Inheritance & Polymorphism
 
