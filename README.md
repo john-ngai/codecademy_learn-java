@@ -32,7 +32,7 @@ Section 8 - Access, Encapsulation, & Static Methods
 <br> &ensp; [8.1 - Access, Encapsulation, & Scope](https://github.com/mrjohnming/codecademy_learn-java/blob/main/08.1_access.md)
 <br> &ensp; [8.2 - Static Variables & Methods](https://github.com/mrjohnming/codecademy_learn-java/blob/main/08.2_static.md)
 
-Section 9 - Inheritance & Polymorphism
+[Section 9 - Inheritance & Polymorphism](https://github.com/mrjohnming/codecademy_learn-java/blob/main/09_inheritance.md)
 
 Section 10 - Debugging
 
