@@ -34,6 +34,6 @@ Section 8 - Access, Encapsulation, & Static Methods
 
 [Section 9 - Inheritance & Polymorphism](https://github.com/mrjohnming/codecademy_learn-java/blob/main/09_inheritance.md)
 
-Section 10 - Debugging
+[Section 10 - Debugging](https://github.com/mrjohnming/codecademy_learn-java/blob/main/10_debugging.md)
 
 Section 11 - Two-Dimensional Arrays
