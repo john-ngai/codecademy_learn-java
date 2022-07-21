@@ -199,14 +199,14 @@ Java variables use the *camelCase* style of capitalization.
 **Examples**
 
 ```java
-// good style
+// GOOD PRACTICE
 boolean isHuman;
  
-// bad styles
-// no capitalization for new word
+// BAD PRACTICE
+// no capitalization for the first letter of next word
 boolean ishuman;
-// first word should be lowercase
+// first letter of the first word should be lowercase
 boolean IsHuman;
-// underscores don't separate words
+// underscores shouldn't separate words
 boolean is_human;
 ```
