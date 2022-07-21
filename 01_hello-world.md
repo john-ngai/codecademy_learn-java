@@ -157,7 +157,10 @@ Java **does not** interpret whitespace (the areas of the code without syntax), b
 Functionally, these two code samples are identical:
 
 ```java
+// Sample #1
 System.out.println("Java");System.out.println("Lava");System.out.println("Guava");
+
+// Sample #2
 System.out.println("Java");
  
 System.out.println("Lava");
